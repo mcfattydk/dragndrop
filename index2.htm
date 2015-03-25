@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+ 
+ 
+<!-- CSS -->
+<style type="text/css">
+.list {
+    /*background-color: #478BFF;*/
+    border: 2px solid #e0e0e0;
+}
+ 
+#items .ui-selected {
+    color: white;
+    font-weight: bold;
+}
+ 
+#items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+#items li {
+    float: left;
+    margin: 20px;
+    padding: 2px;
+    width: 350px;
+    height: 450px;
+    cursor: move;
+}
+ 
+.highlight {
+    border: 2px dashed #e0e0e0;
+}
+</style>
+ 
+ 
+<!-- Javascript -->
+<script>
+$(function () {
+        $("#items").sortable({
+                placeholder: "highlight",
+                revert: true,
+                opacity: .8,
+                start: function (event, ui) {
+                        ui.item.toggleClass("highlight");
+                },
+                stop: function (event, ui) {
+                        ui.item.toggleClass("highlight");
+                }
+        });
+        $("#items").disableSelection();
+});
+</script>
+ 
+<!-- HTML -->
+<div style="width:98%;">
+  <ul id="items">
+      <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+      <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+      <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+      <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+      <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+      <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+      <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+      <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+      <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+      <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+      <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+      <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+  </ul>
+</div>
