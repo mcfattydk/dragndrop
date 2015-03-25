@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Drag n' drop</title>
-    <link rel="stylesheet" href="css/jquery.gridster.css" />
     <link rel="stylesheet" href="css/app.css" />
     
 </head>
@@ -12,18 +11,32 @@
     <div class="row l-main">
         <h1>Welcome to this test of Drag n' drop</h1>
         
-        <div id="draggable1" class="l-dragbox"><p><img src="assest/img/1-not-edible.jpg" alt=""></p></div>
-        <div class="l-sortable">
-            <div class="l-dragbox l-isdragable"><img src="assest/img/1.jpg" alt=""></div>
-            <div class="l-dragbox l-isdragable"><img src="assest/img/2.jpg" alt=""></div>
-            <div class="l-dragbox l-isdragable"><img src="assest/img/1.jpg" alt=""></div>
-        </div>
-        <div id="draggable1" class="l-dragbox"><p><img src="assest/img/4-not-edible.jpg" alt=""></p></div>
+        <ul id="items">
+            <li class="l-dontmove"><img src="assest/img/1-cant-move.jpg" alt=""></li>
+
+            <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+            <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+            <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+            <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+            <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+            <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+            <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+            <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+            <li class="list"><img src="assest/img/1.jpg" alt=""></li>
+            <li class="list"><img src="assest/img/2.jpg" alt=""></li>
+
+            <li class="l-dontmove"><img src="assest/img/4-cant-move.jpg" alt=""></li>
+        </ul>
 
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -27,28 +27,28 @@ h1 {
     margin-bottom: 40px;
 }
 
-li {
-    background: #d6d7af;
-    color: #424239;
-    list-style: none;
+#items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.l-dragbox {
+#items li {
     float: left;
+    margin: 20px;
     width: 350px;
-    border: 1px solid #e0e0e0;
-    text-align: center;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.l-isdragable {
+    height: 450px;
     cursor: move;
 }
 
-.border{
-    border: 2px solid black;
-    background-color: lightgray !important;
-    box-shadow: 0 0 5px black;
-    color: white;
+.list {
+    border: 2px solid #e0e0e0;
+}
+
+.highlight {
+    border: 2px dashed #e0e0e0;
+}
+
+.l-dontmove {
+    cursor: default !important;
 }
