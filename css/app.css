@@ -6,16 +6,15 @@
 }
 
 body {
-    background: #404040;
+    background: #fff;
     font-size: 1em;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
-    color: #dedede;
+    color: #000;
 }
 
 .row {
     width: 90%;
-    height: 200px;
     margin: 50px auto;
 }
 
@@ -25,6 +24,7 @@ h1 {
     letter-spacing: 2px;
     font-weight: 300;
     font-size: 2.5em;
+    margin-bottom: 40px;
 }
 
 li {
@@ -33,16 +33,17 @@ li {
     list-style: none;
 }
 
-#draggable1 { background:#ff0000; width: 150px; height: 35px;}
-#draggable2 { background:#00ff00; width: 150px; height: 35px;}
-#draggable3 { background:#0000ff; width: 150px; height: 35px;}
-#draggable4 { background:#ff0000; width: 150px; height: 35px;}
-#draggable5 { background:#00ff00; width: 150px; height: 35px;}
-#draggable6 { background:#0000ff; width: 150px; height: 35px;}
+.l-dragbox {
+    width: 350px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
 
 .ui-state-default {
     cursor: move;
 }
 
-#sortable > div { float: left; }
-p { padding: 0.5em; }
+.l-dragbox { float: left; }
+p { padding: 0.5; }
